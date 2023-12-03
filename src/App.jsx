@@ -13,7 +13,9 @@ function App() {
               <Link to="login">
                 <button className='btn btn-info btn-lg text-light text-nowrap'>Iniciar sesión</button>
               </Link>
-              <button className='btn btn-primary btn-purple btn-lg'>Registrarse</button>
+              <Link to="register">
+                <button className='btn btn-primary btn-purple btn-lg'>Registrarse</button>
+              </Link>
             </div>
           </div>
         </div>
