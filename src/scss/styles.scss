@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #64C7C7;
+}
+
+.btn {
+    font-family: 'Inter';
+    border-radius: 32px;
+    border: 1px solid #fff;
+}
+
+.btn-outline-light {
+    border: 3px solid #fff;
+}
+
+.btn-lg {
+    font-size: 40px;
+}
+
+.btn-purple {
+    background-color: #ABB3FF;
+}
