@@ -1,11 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 
+* {
+    font-family: sans-serif;
+}
+
 body {
-    background-color: #64C7C7;
+    background-image: linear-gradient(to bottom, #64c7c7, #90d3e5, #bfdff5, #e6edfb);
 }
 
 .btn {
-    font-family: 'Inter';
     border-radius: 32px;
     border: 1px solid #fff;
 }
@@ -15,20 +18,31 @@ body {
 }
 
 .btn-lg {
-    font-size: 40px;
+    font-size: 18px;
 }
 
 .btn-purple {
     background-color: #ABB3FF;
 }
 
+.login-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e6edfb;
+}
+
+.login-register-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #e6edfb;
+}
+
 .custom-input {
-    border-radius: 32px;
+    border-radius: 10px;
     border: 1px solid #8E8E8E;
     background-color: #EDEDED;
     color: #ABABAB;
-    font-family: 'Inter';
-    font-size: 40px;
+    font-size: 16px;
     text-align: center;
 }
 
