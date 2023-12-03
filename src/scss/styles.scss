@@ -21,3 +21,28 @@ body {
 .btn-purple {
     background-color: #ABB3FF;
 }
+
+.custom-input {
+    border-radius: 32px;
+    border: 1px solid #8E8E8E;
+    background-color: #EDEDED;
+    color: #ABABAB;
+    font-family: 'Inter';
+    font-size: 40px;
+    text-align: center;
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: none;
+    color: #ABABAB;
+}
+
+.custom-input::placeholder {
+    color: #ABABAB;
+}
+
+.btn-secondary {
+    color: #EDEDED;
+    border-color: #EDEDED;
+}
