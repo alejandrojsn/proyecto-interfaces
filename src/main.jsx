@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import Register from './Register.jsx'
+import VerificationMethods from './VerificationMethod.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
     element: <Register />,
     id: 'register'
   },
+  {
+    path: '/verify',
+    element: <VerificationMethods />,
+    id: 'verify'
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

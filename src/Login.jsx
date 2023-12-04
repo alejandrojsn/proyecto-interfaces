@@ -5,7 +5,7 @@ export default function Login() {
     <>
       <div className='container'>
         <div className="row justify-content-center">
-          <div className="col-6">
+          <div className="col-md-8 col-lg-6">
             <div className="vh-100 d-flex flex-column justify-content-evenly align-items-center">
               <img src={IDGovLogo} alt="IDGov Logo" width="326px" height="202px"/>
               <form className="h-50 d-flex flex-column justify-content-evenly align-items-center">
