@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom'
 import Register from './Register.jsx'
 import VerificationMethods from './VerificationMethod.jsx'
+import TwoFactorCode from './TwoFactorCode.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     path: '/verify',
     element: <VerificationMethods />,
     id: 'verify'
+  },
+  {
+    path: '/2fa',
+    element: <TwoFactorCode />,
   }
 ]);
 

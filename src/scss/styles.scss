@@ -64,3 +64,29 @@ body {
 .m-25 {
     margin: 25%;
 }
+
+.twofa-code-item {
+    margin: 0 5px;
+    height: 70px;
+    width: 39px;
+}
+
+.twofa-code-item > .dash {
+    height: 6px;
+    width: 100%;
+    background-color:#8E8E8E;
+}
+
+input.twofa-code-item {
+    border-radius: 32px;
+    color: #ABABAB;
+    border: 1px solid #8E8E8E;
+    background-color: #EDEDED;
+    text-align: center;
+    font-size: 40px;
+}
+
+input.twofa-code-item:focus {
+    outline: none;
+    box-shadow: none;
+}
