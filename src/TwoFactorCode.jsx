@@ -13,7 +13,7 @@ export default function TwoFactorCode() {
     }
 
     if (refs.every(ref => ref.current.value.length > 0)) {
-      goto('/');
+      goto('/register-success');
     }
   }
   return (

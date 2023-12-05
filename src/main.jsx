@@ -11,6 +11,7 @@ import {
 import Register from './Register.jsx'
 import VerificationMethods from './VerificationMethod.jsx'
 import TwoFactorCode from './TwoFactorCode.jsx'
+import RegisterSuccess from './RegisterSuccess.jsx'
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,11 @@ const router = createBrowserRouter([
   {
     path: '/2fa',
     element: <TwoFactorCode />,
-  }
+  },
+  {
+    path: '/register-success',
+    element: <RegisterSuccess />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

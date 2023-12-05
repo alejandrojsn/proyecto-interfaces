@@ -1,7 +1,10 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import IDGovLogo from './assets/IDGov.svg'
+import { useCallback } from 'react';
 
 export default function Register() {
+  const navigate = useNavigate();
+  const goToVerify = useCallback(() => navigate('/verify'), [navigate]);
   return (
     <>
       <div className='container'>
@@ -25,9 +28,7 @@ export default function Register() {
                 <div className="w-75">
                     <input type="password" className="form-control custom-input" id="password-confirmation-input" name="password2" placeholder="Confirmación de contraseña" />
                 </div>
-                <Link to="/verify">
-                    <button className="btn btn-secondary btn-lg w-75">Entrar</button>
-                </Link>
+                  <button className="btn btn-secondary btn-lg w-75" onClick={goToVerify}>Entrar</button>
                 </form>
             </div>
           </div>
