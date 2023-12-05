@@ -5,12 +5,28 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #64c7c7, #90d3e5, #bfdff5, #e6edfb);
+    background-image: linear-gradient(to bottom, #64c7c7, #90d3e5, #bfdff5);
+}
+
+.main-container {
+    background: rgba(100, 199, 199, 0.25);
+    box-shadow: 0 8px 32px 0 #90d3e5;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 365px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn {
     border-radius: 32px;
     border: 1px solid #fff;
+    width: 150px !important;
 }
 
 .btn-outline-light {
@@ -23,6 +39,12 @@ body {
 
 .btn-purple {
     background-color: #ABB3FF;
+}
+
+.app-title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .login-title {
@@ -56,12 +78,19 @@ body {
     color: #ABABAB;
 }
 
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.number-input {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
 .btn-secondary {
     color: #EDEDED;
     border-color: #EDEDED;
-}
-
-#password-confirmation-input {
-    font-size: 28px;
-    padding: 15px 0;
 }
