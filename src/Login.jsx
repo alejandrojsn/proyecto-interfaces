@@ -15,7 +15,7 @@ export default function Login() {
                   <input type="email" className="form-control custom-input" name="email" placeholder="Correo" />
                 </div>
                 <div className="w-100">
-                  <input type="password" className="form-control custom-input" name="password" placeholder="Contraseña" />
+                  <input type="password" className="form-control custom-input" name="password" placeholder="Contraseña" autoComplete='false' />
                 </div>
                 <span className='login-register-link'>
                   ¿No tienes acceso? <Link to='/register'>Regístrate</Link>
