@@ -46,7 +46,10 @@ const router = createBrowserRouter([
     path: '/dashboard',
     element: <Dashboard />,
   }
-]);
+],
+{
+  basename: '/proyecto-interfaces/',
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
