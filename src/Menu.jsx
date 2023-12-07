@@ -1,6 +1,10 @@
+import { useCallback } from 'react';
 import backButton from './assets/backButton.svg';
+import { useNavigate } from 'react-router-dom';
 
 export default function Menu({ shown, onClose }) {
+    const navigate = useNavigate();
+    const goToStart = useCallback(() => navigate('/'), [navigate]);
     return (
         <div className={`${shown ? 'd-flex' : 'd-none'} menu p-2 flex-column`}>
             <div className='d-flex w-100'>
@@ -15,7 +19,7 @@ export default function Menu({ shown, onClose }) {
                 <button className="btn btn-secondary w-100">Información</button>
                 <button className="btn btn-secondary w-100">Permisos de trabajo y residencia</button>
                 <button className="btn btn-secondary w-100">Tramites de documentación legal</button>
-                <button className="btn btn-purple w-100">Cerrar sesión</button>
+                <button className="btn btn-purple w-100" onClick={goToStart}>Cerrar sesión</button>
             </div>
         </div>
     );

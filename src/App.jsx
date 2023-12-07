@@ -27,7 +27,7 @@ function App() {
                 loading ? (<l-ring size="60" color="#bfdff5"></l-ring>) : (
                   <>
                     <button onClick={() => fakeNav('/login')} className='btn btn-info btn-lg btn-login text-light text-nowrap'>Iniciar sesión</button>
-                    <button onClick={() => fakeNav('/register')} className='btn btn-primary btn-register btn-purple btn-lg w-100'>Registrarse</button>
+                    <button onClick={() => fakeNav('/register')} className='btn btn-primary btn-register btn-purple btn-lg'>Registrarse</button>
                   </>
                 )
               }

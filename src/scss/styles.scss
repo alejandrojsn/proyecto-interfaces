@@ -210,3 +210,24 @@ input.twofa-code-item:focus {
 .box-sm {
     font-size: 20px;
 }
+
+.tramite-modal {
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-radius: 32px;
+    background-color: #1C8585;
+    transform: translateY(-50%);
+}
+
+.tramite-box {
+    border-radius: 32px;
+    background-color: #EDEDED;
+    border-radius: 1px solid #8E8E8E;
+    color: #838383;
+    text-align: center;
+}
+
+.padding-inline-start-0 {
+    padding-inline-start: 0;
+}
