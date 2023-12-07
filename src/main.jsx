@@ -14,6 +14,8 @@ import TwoFactorCode from './TwoFactorCode.jsx'
 import RegisterSuccess from './RegisterSuccess.jsx'
 import Dashboard from './Dashboard.jsx'
 import UpdateInformation from './UpdateInformation.jsx'
+import TramiteDocumentacion from './TramiteDocumentation.jsx'
+import ChooseDocument from './ChooseDocument.jsx'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
   {
     path: '/update-information',
     element: <UpdateInformation />,
+  },
+  {
+    path: '/tramite-documentation',
+    element: <TramiteDocumentacion />,
+  },
+  {
+    path: '/choose-document',
+    element: <ChooseDocument />,
   }
 ],
 {

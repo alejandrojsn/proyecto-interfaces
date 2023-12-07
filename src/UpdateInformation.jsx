@@ -5,6 +5,7 @@ import { useCallback } from "react";
 export default function UpdateInformation() {
     const navigate = useNavigate();
     const goToVerify = useCallback(() => navigate("/verify"), [navigate]);
+    const goToDashboard = useCallback(() => navigate("/dashboard"), [navigate]);
 
     return (
         <div className="container">
@@ -14,10 +15,13 @@ export default function UpdateInformation() {
                         <div className="main-container">
                             <button
                                 type="button"
-                                className="btn btn-secondary align-self-start"
+                                className="btn btn-secondary btn-sm align-self-start"
                                 onClick={() => navigate(-1)}
                                 title="Volver"
-                                style={{ marginLeft: '10%', textDecoration: 'none' }}
+                                style={{
+                                    marginLeft: "10%",
+                                    textDecoration: "none",
+                                }}
                             >
                                 &#9664; Volver
                             </button>
@@ -69,6 +73,17 @@ export default function UpdateInformation() {
                                     title="Cambiar contraseña"
                                 >
                                     Cambiar contraseña
+                                </button>
+                                <button
+                                    type="button"
+                                    className="btn btn-secondary btn-sm align-self-end mt-3"
+                                    onClick={goToDashboard}
+                                    title="Aplicar"
+                                    style={{
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    Aplicar &#9654;
                                 </button>
                             </form>
                         </div>
