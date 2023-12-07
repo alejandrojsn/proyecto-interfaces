@@ -15,4 +15,7 @@ export default defineConfig({
     }
   },
   base: '/proyecto-interfaces/',
+  build: {
+    outDir: 'docs'
+  }
 })
