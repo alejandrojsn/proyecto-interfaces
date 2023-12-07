@@ -105,8 +105,11 @@ body {
     color: #fff;
     border: 3px solid #fff;
     border-radius: 32px;
-    padding: 40px;
     text-align: center;
+}
+
+.p-40 {
+    padding: 40px;
 }
 
 .m-25 {
@@ -137,4 +140,55 @@ input.twofa-code-item {
 input.twofa-code-item:focus {
     outline: none;
     box-shadow: none;
+}
+
+.custom-table {
+    border-radius: 32px;
+    border: 1px solid #8E8E8E;
+    background-color: #EDEDED;
+    padding-bottom: 40px;
+}
+
+.custom-table > .table-head {
+    color: #ABABAB;
+    font-size: 20px;
+    border-bottom: 4px solid #8E8E8E;
+    padding: 10px 10px 0 10px;
+}
+
+.custom-table > .table-row > div {
+    padding: 10px;
+}
+
+.custom-table > .table-row > div:first-child {
+    border-right: 2px solid #8E8E8E;
+}
+
+.custom-table > .table-row> div:last-child {
+    border-left: 2px solid #8E8E8E;
+}
+
+.custom-table > .table-row {
+    border-bottom: 1px solid #8E8E8E;
+    color: #5A5A5A;
+    font-size: 12px;
+}
+
+.search-bar > input {
+    color: #ABABAB;
+    background-color: #EDEDED;
+    border: 1px solid #8E8E8E;
+    border-radius: 32px;
+    font-size: 16px;
+}
+
+.search-bar > input:focus {
+    color: #ABABAB;
+    outline: none;
+    box-shadow: none;
+    background-color: #EDEDED;
+}
+
+.search-bar > input::placeholder {
+    color: #ABABAB;
 }

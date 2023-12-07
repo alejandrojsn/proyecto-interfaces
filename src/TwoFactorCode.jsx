@@ -25,7 +25,7 @@ export default function TwoFactorCode() {
               <img src={IDGovLogo}  className="mt-2" alt="IDGov Logo" width="120px" height="80px"/>
             </div>
             <div className="vh-100 d-flex flex-column align-items-center">
-              <div className="custom-box w-75 m-25">Código de verificación</div>
+              <div className="custom-box w-75 m-25 p-40">Código de verificación</div>
               <div className='d-flex align-items-center justify-content-center w-100'>
                 <input type="text" className="twofa-code-item" data-number="0" ref={refs[0]} maxLength="1" autoFocus={true} onInput={handleInput}/>
                 <input type="text" className="twofa-code-item" data-number="1" ref={refs[1]} maxLength="1" onInput={handleInput}/>

@@ -14,7 +14,7 @@ export default function VerificationMethods() {
               <img src={IDGovLogo}  className="mt-2" alt="IDGov Logo" width="120px" height="80px"/>
             </div>
             <div className="vh-100 d-flex flex-column align-items-center">
-              <div className="custom-box w-75 m-25">Método de verificación</div>
+              <div className="custom-box w-75 m-25 p-40">Método de verificación</div>
               <div className='d-flex flex-column align-items-center w-100'>
                 <button className='btn btn-secondary btn-lg w-75 mb-4' onClick={goTo2fa}>Correo</button>
                 <button className='btn btn-secondary btn-lg w-75' onClick={goTo2fa}>Mensaje de texto</button>

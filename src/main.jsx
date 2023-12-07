@@ -12,6 +12,7 @@ import Register from './Register.jsx'
 import VerificationMethods from './VerificationMethod.jsx'
 import TwoFactorCode from './TwoFactorCode.jsx'
 import RegisterSuccess from './RegisterSuccess.jsx'
+import Dashboard from './Dashboard.jsx'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
     path: '/register-success',
     element: <RegisterSuccess />,
   },
+  {
+    path: '/dashboard',
+    element: <Dashboard />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

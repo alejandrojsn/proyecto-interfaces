@@ -1,7 +1,10 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import IDGovLogo from './assets/IDGov.svg'
+import { useCallback } from 'react';
 
 export default function Login() {
+  const navigate = useNavigate();
+  const goToDashboard = useCallback(() => navigate('/dashboard'), [navigate]);
   return (
     <div className='container'>
       <div className="row justify-content-center">
@@ -20,7 +23,7 @@ export default function Login() {
                 <span className='login-register-link'>
                   ¿No tienes acceso? <Link to='/register'>Regístrate</Link>
                 </span>
-                <button type="button" className="btn btn-secondary btn-md w-75 mt-3">Entrar</button>
+                <button type="button" className="btn btn-secondary btn-md w-75 mt-3" onClick={goToDashboard}>Entrar</button>
               </form>
             </div>
           </div>
