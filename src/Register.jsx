@@ -1,11 +1,14 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import IDGovLogo from './assets/IDGov.svg'
+import { useCallback } from 'react';
 
 export default function Register() {
+  const navigate = useNavigate();
+  const goToVerify = useCallback(() => navigate('/verify'), [navigate]);
   return (
     <div className='container'>
       <div className="row justify-content-center">
-        <div className="col-6">
+        <div className="col-md-8 col-lg-6">
           <div className="vh-100 d-flex flex-column justify-content-center align-items-center">
             <div className='main-container'>
               <img src={IDGovLogo} alt="IDGov Logo" width="150px" />
@@ -29,7 +32,7 @@ export default function Register() {
                 <span className='login-register-link'>
                   ¿Ya tienes cuenta? <Link to='/login'>Inicia sesión</Link>
                 </span>
-                <button type="button" className="btn btn-secondary btn-md w-75 mt-3">Entrar</button>
+                <button type="button" className="btn btn-secondary btn-md w-75 mt-3" onClick={goToVerify}>Entrar</button>
               </form>
             </div>
           </div>

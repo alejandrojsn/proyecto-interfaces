@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <div className='container'>
       <div className="row justify-content-center">
-        <div className="col-6">
+        <div className="col-md-8 col-lg-6">
           <div className="vh-100 d-flex flex-column justify-content-center align-items-center">
             <div className='main-container'>
               <img src={IDGovLogo} alt="IDGov Logo" width="150px" />
