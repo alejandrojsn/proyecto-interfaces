@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Menu({ shown, onClose }) {
     const navigate = useNavigate();
     const goToStart = useCallback(() => navigate('/'), [navigate]);
+    const goToUpdateInfo = useCallback(() => navigate('/update-information'), [navigate]);
     return (
         <div className={`${shown ? 'd-flex' : 'd-none'} menu p-2 flex-column`}>
             <div className='d-flex w-100'>
@@ -12,7 +13,7 @@ export default function Menu({ shown, onClose }) {
             </div>
             <div className="d-flex flex-column justify-content-evenly flex-grow-1 align-items-center">
                 <div className="custom-box box-sm p-3">Seleccione la operación deseada</div>
-                <button className="btn btn-secondary w-100">Actualización de datos personales</button>
+                <button className="btn btn-secondary w-100" onClick={goToUpdateInfo}>Actualización de datos personales</button>
                 <button className="btn btn-secondary w-100">Carga de documentos y actas</button>
                 <button className="btn btn-secondary w-100">Consulta de estado y seguimiento de trámites</button>
                 <button className="btn btn-secondary w-100">Gestión de cita y turnos</button>

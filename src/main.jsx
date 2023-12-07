@@ -13,6 +13,7 @@ import VerificationMethods from './VerificationMethod.jsx'
 import TwoFactorCode from './TwoFactorCode.jsx'
 import RegisterSuccess from './RegisterSuccess.jsx'
 import Dashboard from './Dashboard.jsx'
+import UpdateInformation from './UpdateInformation.jsx'
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: '/dashboard',
     element: <Dashboard />,
+  },
+  {
+    path: '/update-information',
+    element: <UpdateInformation />,
   }
 ],
 {
