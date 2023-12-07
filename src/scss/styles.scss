@@ -26,7 +26,6 @@ body {
 .btn {
     border-radius: 32px;
     border: 1px solid #fff;
-    width: 150px !important;
 }
 
 .btn-outline-light {
@@ -191,4 +190,23 @@ input.twofa-code-item:focus {
 
 .search-bar > input::placeholder {
     color: #ABABAB;
+}
+
+.menu {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    background-color: #1C8585;
+
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.box-sm {
+    font-size: 20px;
 }

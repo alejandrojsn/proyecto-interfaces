@@ -1,6 +1,6 @@
-import { useCallback } from 'react';
 import IDGovLogo from './assets/IDGov.svg'
 import { Link, useNavigate } from 'react-router-dom'
+import MenuButton from './MenuButton';
 
 export default function Dashboard() {
   const navigate = useNavigate();
@@ -8,11 +8,12 @@ export default function Dashboard() {
     <>
       <div className='container'>
         <div className="row justify-content-center">
-          <div className="col-md-8 col-lg-6">
-            <div>
+          <div className="col-md-8 col-lg-6 position-relative vh-100">
+            <div className="d-flex">
               <img src={IDGovLogo}  className="mt-2" alt="IDGov Logo" width="120px" height="80px"/>
+              <MenuButton className="ms-auto"/>
             </div>
-            <div className="vh-100 d-flex flex-column align-items-center">
+            <div className="d-flex flex-column align-items-center">
               <div className="search-bar w-75 mt-5">
                 <input type="text" className="form-control w-100" placeholder="Buscar..." />
               </div>
