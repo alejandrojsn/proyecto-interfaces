@@ -1,6 +1,6 @@
+import React, { useCallback } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import IDGovLogo from "./assets/IDGov.svg";
-import { useCallback } from "react";
 
 export default function UpdateInformation() {
     const navigate = useNavigate();

@@ -1,7 +1,7 @@
+import React, { useCallback, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import IDGovLogo from "./assets/IDGov.svg";
 import UsuarioTerceroModal from "./UsuarioTerceroModal";
-import { useCallback, useState } from "react";
+import IDGovLogo from "./assets/IDGov.svg";
 
 export default function TramiteDocumentacion() {
   const navigate = useNavigate();

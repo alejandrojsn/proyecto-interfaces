@@ -1,6 +1,7 @@
+import React from "react";
 
-export default function TramiteModal({ name, status, onClose, shown}) {
-    return (<>
+export default function TramiteModal({ name, status, onClose, shown }) {
+    return (
         <div className={`tramite-modal ${shown ? 'd-flex' : 'd-none'} py-5 px-3 flex-column position-absolute align-items-center`}>
             <div className="custom-box py-2 px-5">{name}</div>
             <div className="tramite-box my-5 p-5">
@@ -24,7 +25,7 @@ export default function TramiteModal({ name, status, onClose, shown}) {
                 </div>
                 }
             </div>
-            { status !== 'Finalizado' && <button className="btn btn-info text-light w-75">
+            {status !== 'Finalizado' && <button className="btn btn-info text-light w-75">
                 {status === 'En proceso' && 'Ir a carga de documentos'}
                 {status === 'Cancelado' && 'Tramites de documentación legal'}
                 {status === 'Atención' && 'Ir a carga de documentos'}
@@ -32,5 +33,5 @@ export default function TramiteModal({ name, status, onClose, shown}) {
             }
             <button className="btn btn-purple mt-3 w-75 text-light" onClick={onClose}>Volver</button>
         </div>
-    </>);
+    );
 }

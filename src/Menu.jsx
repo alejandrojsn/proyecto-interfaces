@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import backButton from './assets/backButton.svg';
 import { useNavigate } from 'react-router-dom';
 

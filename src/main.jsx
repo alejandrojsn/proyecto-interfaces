@@ -1,21 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import * as bootstrap from 'bootstrap'
-import App from './App.jsx'
-import Login from './Login.jsx'
-import './scss/styles.scss'
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom'
-import Register from './Register.jsx'
-import VerificationMethods from './VerificationMethod.jsx'
-import TwoFactorCode from './TwoFactorCode.jsx'
-import RegisterSuccess from './RegisterSuccess.jsx'
-import Dashboard from './Dashboard.jsx'
-import UpdateInformation from './UpdateInformation.jsx'
-import TramiteDocumentacion from './TramiteDocumentation.jsx'
+import App from './App.jsx'
+import Login from './auth/Login.jsx'
+import Register from './auth/Register.jsx'
 import ChooseDocument from './ChooseDocument.jsx'
+import Dashboard from './Dashboard.jsx'
+import RegisterSuccess from './RegisterSuccess.jsx'
+import TramiteDocumentacion from './TramiteDocumentation.jsx'
+import TwoFactorCode from './TwoFactorCode.jsx'
+import UpdateInformation from './UpdateInformation.jsx'
+import VerificationMethods from './VerificationMethod.jsx'
+import './scss/styles.scss'
 
 const router = createBrowserRouter([
   {
@@ -62,12 +61,15 @@ const router = createBrowserRouter([
     element: <ChooseDocument />,
   }
 ],
-{
-  basename: '/proyecto-interfaces/',
-});
+  {
+    basename: '/proyecto-interfaces/',
+  });
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+const root = document.getElementById('root');
+if (root) {
+  ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>,
+  );
+}

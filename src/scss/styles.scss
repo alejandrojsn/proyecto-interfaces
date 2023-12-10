@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
+/* Global */
 * {
     font-family: sans-serif;
 }
@@ -7,6 +8,13 @@
 body {
     background-image: linear-gradient(to bottom, #64c7c7, #90d3e5, #bfdff5);
 }
+
+.app-title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+
 
 .main-container {
     background: rgba(100, 199, 199, 0.25);
@@ -23,9 +31,13 @@ body {
     gap: 10px;
 }
 
+
+/* BUTTONS */
+
 .btn {
     border-radius: 32px;
     border: 1px solid #fff;
+    width: 150px;
 }
 
 .btn-outline-light {
@@ -40,22 +52,23 @@ body {
     background-color: #ABB3FF;
 }
 
-.app-title {
-    color: #FFF;
-    font-size: 36px;
-    font-weight: 700;
+.btn-secondary {
+    color: #EDEDED;
+    border-color: #EDEDED;
 }
 
-.login-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #e6edfb;
+
+
+/* INPUTS */
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.login-register-link {
-    font-weight: 700;
-    font-size: 14px;
-    color: #e6edfb;
+.number-input {
+    appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 .custom-input {
@@ -77,28 +90,6 @@ body {
     color: #ABABAB;
 }
 
-.number-input::-webkit-outer-spin-button,
-.number-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Firefox */
-.number-input {
-    appearance: textfield;
-    -moz-appearance: textfield;
-}
-
-.btn-secondary {
-    color: #EDEDED;
-    border-color: #EDEDED;
-}
-
-#password-confirmation-input {
-    font-size: 28px;
-    padding: 15px 0;
-}
-
 .custom-box {
     font-size: 40px;
     color: #fff;
@@ -115,31 +106,8 @@ body {
     margin: 25%;
 }
 
-.twofa-code-item {
-    margin: 0 5px;
-    height: 70px;
-    width: 39px;
-}
 
-.twofa-code-item > .dash {
-    height: 6px;
-    width: 100%;
-    background-color:#8E8E8E;
-}
-
-input.twofa-code-item {
-    border-radius: 32px;
-    color: #ABABAB;
-    border: 1px solid #8E8E8E;
-    background-color: #EDEDED;
-    text-align: center;
-    font-size: 40px;
-}
-
-input.twofa-code-item:focus {
-    outline: none;
-    box-shadow: none;
-}
+/* TABLE */
 
 .custom-table {
     border-radius: 32px;
@@ -148,32 +116,33 @@ input.twofa-code-item:focus {
     padding-bottom: 40px;
 }
 
-.custom-table > .table-head {
+.custom-table>.table-head {
     color: #ABABAB;
     font-size: 20px;
     border-bottom: 4px solid #8E8E8E;
     padding: 10px 10px 0 10px;
 }
 
-.custom-table > .table-row > div {
+.custom-table>.table-row>div {
     padding: 10px;
 }
 
-.custom-table > .table-row > div:first-child {
+.custom-table>.table-row>div:first-child {
     border-right: 2px solid #8E8E8E;
 }
 
-.custom-table > .table-row> div:last-child {
+.custom-table>.table-row>div:last-child {
     border-left: 2px solid #8E8E8E;
 }
 
-.custom-table > .table-row {
+.custom-table>.table-row {
     border-bottom: 1px solid #8E8E8E;
     color: #5A5A5A;
     font-size: 12px;
 }
 
-.search-bar > input {
+
+.search-bar>input {
     color: #ABABAB;
     background-color: #EDEDED;
     border: 1px solid #8E8E8E;
@@ -181,14 +150,14 @@ input.twofa-code-item:focus {
     font-size: 16px;
 }
 
-.search-bar > input:focus {
+.search-bar>input:focus {
     color: #ABABAB;
     outline: none;
     box-shadow: none;
     background-color: #EDEDED;
 }
 
-.search-bar > input::placeholder {
+.search-bar>input::placeholder {
     color: #ABABAB;
 }
 
@@ -221,9 +190,8 @@ input.twofa-code-item:focus {
 }
 
 .tramite-box {
-    border-radius: 32px;
     background-color: #EDEDED;
-    border-radius: 1px solid #8E8E8E;
+    border-radius: 32px solid #8E8E8E;
     color: #838383;
     text-align: center;
 }
