@@ -1,12 +1,14 @@
 
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useCallback } from 'react';
+import { Link, useNavigate } from 'react-router-dom'
 import IDGovLogo from './../assets/IDGov.svg';
 import { TemplateBoilerplate } from '../components/TemplateBoilerplate';
 import './../scss/auth.scss';
 
 
 export default function Register() {
+  const navigate = useNavigate();
+  const goToVerify = useCallback(() => navigate('/verify'));
   return (
     <TemplateBoilerplate>
       <div className='main-container'>
@@ -31,7 +33,7 @@ export default function Register() {
           <span className='login-register-link'>
             ¿Ya tienes cuenta? <Link to='/login'>Inicia sesión</Link>
           </span>
-          <button type="button" className="btn btn-secondary btn-md w-75 mt-3">Entrar</button>
+          <button type="button" className="btn btn-secondary btn-md w-75 mt-3" onClick={goToVerify}>Entrar</button>
         </form>
       </div>
     </TemplateBoilerplate>

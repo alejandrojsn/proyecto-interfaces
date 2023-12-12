@@ -15,6 +15,9 @@ import TwoFactorCode from './TwoFactorCode.jsx'
 import UpdateInformation from './UpdateInformation.jsx'
 import VerificationMethods from './VerificationMethod.jsx'
 import './scss/styles.scss'
+import UploadDocuments from './UploadDocuments.jsx'
+import DocumentName from './DocumentName.jsx'
+import UploadSuccess from './UploadSuccess.jsx'
 
 const router = createBrowserRouter([
   {
@@ -59,7 +62,19 @@ const router = createBrowserRouter([
   {
     path: '/choose-document',
     element: <ChooseDocument />,
-  }
+  },
+  {
+    path: '/upload-document',
+    element: <UploadDocuments />,
+  },
+  {
+    path: '/document-name',
+    element: <DocumentName />,
+  },
+  {
+    path: '/upload-success',
+    element: <UploadSuccess />,
+  },
 ],
   {
     basename: '/proyecto-interfaces/',
